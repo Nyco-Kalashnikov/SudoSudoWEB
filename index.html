@@ -179,9 +179,16 @@
     border-radius: 0 8px 8px 0;
   }
 
+  .button-group {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .repo-btn {
     display: inline-block;
-    margin-top: 1rem;
     padding: 1rem 2rem;
     border: 1px solid #555;
     border-radius: 6px;
@@ -190,6 +197,7 @@
     font-weight: 700;
     transition: all .3s ease;
     background: rgba(0, 0, 0, 0.5);
+    text-align: center;
   }
   
   .repo-btn:hover {
@@ -211,17 +219,6 @@
  
 </head>
 <body>
-
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SudoSudo</title>
-
-  <link rel="icon" type="image/x-icon" href="sudosudo.ico">
-
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-</head>
 
 <header class="hero">
   <div class="stars">
@@ -263,7 +260,10 @@
     </p>
   </div>
 
-  <a class="repo-btn" href="https://github.com/Nyco-Kalashnikov/SudoSudo" target="_blank" rel="noopener">View on GitHub →</a>
+  <div class="button-group">
+    <a class="repo-btn" href="https://github.com/Nyco-Kalashnikov/SudoSudo" target="_blank" rel="noopener">View on GitHub →</a>
+    <a class="repo-btn" href="https://github.com/Nyco-Kalashnikov/SudoSudo/releases/latest/download/SudoSudo.exe" download>Download SudoSudo →</a>
+  </div>
 </section>
 
 <footer>SUDOSUDO 2026 — Put something here... how about this? >w<</footer>
